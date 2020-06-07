@@ -1,0 +1,147 @@
+/* RESET */
+body, h1, h2, p, ul, a {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+/* ADD FONTS */
+@font-face{
+    font-family:Roboto Mono, Roboto;
+    /*Caso a fonte esteja na mesma pasta*/
+    src: url("../fonts/RobotoMono-Regular.ttf");
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+/* HEADER */
+.menu {
+  background: linear-gradient(106.92deg, #5D35B5 0%, #C067D1 98.9%);
+  padding: 32px;
+}
+.menu-container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.menu-container::after, .menu-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.menu-logo {
+  display: block;
+  float: left;
+}
+
+.menu-nav {
+  float: right;
+  margin-right: 16px;
+}
+.menu-nav li {
+  display: inline-block;
+}
+
+.menu-nav li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: Roboto Mono;
+}
+/* INTRO */
+.intro {
+  background: url("../img/foto-intro.png") no-repeat center;
+  background-size: cover;
+  padding: 128px 0;
+}
+
+.intro h1 {
+  text-align: center;
+  text-decoration: none;
+  font-size: 48px;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #fff;
+}
+
+.intro p {
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-style: normal;
+  font-family: Roboto Mono;
+  font-weight: 500;
+  color: #fff;
+}
+
+.intro-btn {
+  text-align: center;
+  display: block;
+  width: 177px;
+  text-transform: uppercase;
+  background:#C167D1;
+  padding: 16px;
+  color: #fff;
+  font-size: 18px;
+  font-family: Roboto Mono;
+  font-weight: normal;
+  margin: 32px auto;
+  border-radius: 4px;
+}
+
+/* PRODUTOS */
+
+.produtos {
+  padding: 64px 0;
+}
+
+.produtos-container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.produtos-container::after, .produtos-container::before {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.produtos-item {
+  width: 300px;
+  float: left;
+  margin: 64px auto;
+}
+
+.produtos h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Roboto;
+  color: #703EBB;
+}
+
+.produtos-item p {
+  display: block;
+  align-items: center;
+  padding: 16px 20px;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #6A6A6A;
+
+}
+
+.produtos-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.produtos.img-item::before {
+  content: 'oi';
+  width: 180px;
+}
